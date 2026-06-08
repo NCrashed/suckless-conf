@@ -17,6 +17,7 @@ import Data.Typeable
 import Prettyprinter
 import System.Process.Typed
 
+import System.Exit (ExitCode(..))
 import System.IO
 
 data CallProcException =

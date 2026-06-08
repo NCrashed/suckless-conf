@@ -1,5 +1,14 @@
 # Revision history for suckless-conf
 
+## 0.1.2.11 2026-06-09
+
+  - Fix: import `ExitCode` explicitly in
+    `Data.Config.Suckless.Almost.RPC` instead of relying on a
+    transitive re-export from `typed-process`. Older `typed-process`
+    (e.g. 0.2.4.1, selected on GHC 9.4 with `--prefer-oldest`) does not
+    re-export it, so the package failed to compile there. No API or
+    behaviour change.
+
 ## 0.1.2.10 2026-06-09
 
 Bump versions:

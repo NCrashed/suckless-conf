@@ -1,6 +1,6 @@
 cabal-version:      3.0
 name:               suckless-conf
-version:            0.1.2.10
+version:            0.1.2.11
 synopsis:           S-expression configuration language and the bf6 script runtime
 description:
     @suckless-conf@ is a small Lisp-like, s-expression configuration
