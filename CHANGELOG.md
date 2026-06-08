@@ -1,5 +1,12 @@
 # Revision history for suckless-conf
 
+## 0.1.2.10 2026-06-09
+
+Bump versions:
+  - mtl >= 2.3 -> >= 2.2
+  - transformers >= 0.6 -> >= 0.5
+  - interpolatedstring-perl6 >= 1.0 -> >= 1.0.2
+
 ## 0.1.2.9  2026-06-08
 
 First Hackage release. Previously this package only lived as a
