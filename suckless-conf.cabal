@@ -3,22 +3,23 @@ name:               suckless-conf
 version:            0.1.2.9
 synopsis:           S-expression configuration language and the bf6 script runtime
 description:
-    @suckless-conf@ is a small Lisp-like / s-expression configuration
+    @suckless-conf@ is a small Lisp-like, s-expression configuration
     language with an embedded scripting layer. It parses configuration
     files into a simple @Syntax@ tree, offers a key-value access layer
-    and Aeson/TOML/YAML/INI bridges, and ships a tiny interpreter
-    (@Data.Config.Suckless.Script@) used to evaluate the same syntax as
-    a script. The package also installs @bf6@, the standalone script
-    runtime that the <https://github.com/NCrashed/hbs2 hbs2> project uses
-    via a shebang for its tooling.
-    .
-    Originally written by Dmitry Zuykov (\"voidlizard\") for the @hbs2@
-    project; this Hackage release is published from
+    and bridges to Aeson, TOML, YAML and INI, and ships a tiny
+    interpreter (@Data.Config.Suckless.Script@) that evaluates the same
+    syntax as a script. The package also installs @bf6@, the standalone
+    script runtime that the <https://github.com/NCrashed/hbs2 hbs2>
+    project uses via a shebang for its tooling.
+
+    Originally written by Dmitry Zuykov (voidlizard) for the @hbs2@
+    project, this Hackage release is published from
     <https://github.com/NCrashed/suckless-conf> so downstream projects
-    can depend on it without vendoring. The s-expression tokenizer and
-    reader (@Data.Text.Fuzzy.Tokenize@ and @Data.Text.Fuzzy.SExp@,
-    derived from the @fuzzy-parse@ package, MIT-licensed) are bundled as
-    internal modules.
+    can depend on it without vendoring.
+
+    The s-expression tokenizer and reader (@Data.Text.Fuzzy.Tokenize@
+    and @Data.Text.Fuzzy.SExp@) are bundled as internal modules,
+    derived from the MIT-licensed @fuzzy-parse@ package.
 license:            BSD-3-Clause AND MIT
 license-files:      LICENSE
                     LICENSE.fuzzy-parse
