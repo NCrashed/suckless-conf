@@ -2,12 +2,17 @@
 
 ## 0.1.2.11 2026-06-09
 
-  - Fix: import `ExitCode` explicitly in
+  - Fix: import `ExitCode(..)` explicitly in
     `Data.Config.Suckless.Almost.RPC` instead of relying on a
     transitive re-export from `typed-process`. Older `typed-process`
     (e.g. 0.2.4.1, selected on GHC 9.4 with `--prefer-oldest`) does not
-    re-export it, so the package failed to compile there. No API or
-    behaviour change.
+    re-export the type or the `ExitSuccess` constructor, so the package
+    failed to compile there. No API or behaviour change.
+  - Raise `prettyprinter-ansi-terminal` lower bound to `>= 1.1.2`: the
+    `Prettyprinter.Render.Terminal` module (used by
+    `Data.Config.Suckless.Script.Internal`) only exists from 1.1.2 on;
+    earlier versions use the pre-rename `Data.Text.Prettyprint.Doc.*`
+    names.
 
 ## 0.1.2.10 2026-06-09
 
